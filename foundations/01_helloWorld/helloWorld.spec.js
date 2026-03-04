@@ -1,7 +1,6 @@
-const helloWorld = require('./helloWorld');
-
-describe('Hello World', function() {
-  test('says "Hello, World!"', function() {
-    expect(helloWorld()).toEqual('Hello, World!');
+const greet=require(`./helloWorld`);
+describe(`greeting test for my 1st project `,function(){
+  test(`the out put must be "hellow there!"`,function(){
+    expect(greet()).toEqual(`hellow there!`);
   });
 });
